@@ -48,8 +48,6 @@ main img {
   flex-direction: row;
 }
 
-
-
 .item {
   flex: 1;
   margin: 10px;
@@ -239,10 +237,16 @@ footer p {
   #host {
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+  }
+
+  #host div {
+    max-width: 50%;
+    margin: 10px;
   }
 
   #host img {
     max-width: 50%;
+    margin: 10px;
   }
-
 }
