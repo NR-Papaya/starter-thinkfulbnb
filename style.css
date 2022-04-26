@@ -5,19 +5,20 @@ body {
 }
 
 h2 {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 400;
   margin: 0 10px 10px 10px;
   text-align: center;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 500;
 }
 
 p {
   line-height: 1.5em;
+  font-size: 20px;
   margin: 0;
 }
 
@@ -31,7 +32,8 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 100%;
+  margin: 0px;
 }
 
 /* ---  Groups & Items --- */
@@ -46,6 +48,8 @@ main img {
   flex-direction: row;
 }
 
+
+
 .item {
   flex: 1;
   margin: 10px;
@@ -58,6 +62,8 @@ main img {
 /* -------  Navigation ------- */
 
 header {
+  display: flex;
+  flex-direction: column;
   background-color: #ff385c;
   padding: 20px 20px 0 20px;
   text-align: center;
@@ -88,26 +94,23 @@ header nav ul li a:hover {
 
 /* -------  Search Form ------- */
 #stay {
-  align-items: center;
-}
-
-main section h2 {
-  font-size: 40px;
-  font-weight: 500;
+  display: flex;
+  flex-direction: column;
 }
 
 form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   border: 2px solid #ff385c;
   padding: 10px;
-  align-items: stretch;
-  width: 350px;
 }
 
 form div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 5px 15px;
+
 }
 
 form label {
@@ -129,6 +132,38 @@ form button {
   width: 100%;
 }
 
+/* ------------ about ---------- */
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#about-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section div img {
+  margin: 15px;
+}
+
+
+
+/* ----------- ideas ----------- */
+
+#ideas {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 15px;
+}
+
+#ideas div img {
+  margin: 0px;
+}
+
 /* -------  Footer ------- */
 
 footer {
@@ -142,3 +177,72 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+@media all and (min-width:480px) {
+
+  /* ------header----- */
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+  }
+
+  /* ---------form--------- */
+
+  form {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  form div {
+    flex-direction: column;
+  }
+
+  /* --------about--------- */
+
+  #about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  #about-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  #about-div .item {
+    width: 20%;
+    margin: 10px;
+  }
+
+  /* --------ideas-------- */
+  #ideas div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #ideas div div {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+  }
+
+  #ideas div div .item {
+    max-width: 1200px;
+  }
+
+  /* --------host----------- */
+  #host {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #host img {
+    max-width: 50%;
+  }
+
+}
