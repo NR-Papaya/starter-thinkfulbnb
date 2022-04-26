@@ -190,10 +190,23 @@ footer p {
   form {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 
   form div {
     flex-direction: column;
+    margin-top: 0px;
+    padding: 0px;
+  }
+
+  form div input {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  form div select {
+    padding: 0px;
+    margin: 0px;
   }
 
   /* --------about--------- */
