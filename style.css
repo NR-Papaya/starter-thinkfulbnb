@@ -36,9 +36,14 @@ main img {
 
 /* ---  Groups & Items --- */
 
-.group {
+.groupCol {
   display: flex;
   flex-direction: column;
+}
+
+.groupRow {
+  display: flex;
+  flex-direction: row;
 }
 
 .item {
@@ -56,6 +61,7 @@ header {
   background-color: #ff385c;
   padding: 20px 20px 0 20px;
   text-align: center;
+  align-items: center;
 }
 
 .logo {
@@ -70,6 +76,7 @@ header nav ul li {
 
 header nav ul li a {
   color: #fff;
+  font-size: 20px;
   text-decoration: none;
   padding: 0 20px 0 0;
 }
@@ -80,9 +87,27 @@ header nav ul li a:hover {
 }
 
 /* -------  Search Form ------- */
+#stay {
+  align-items: center;
+}
+
+main section h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+  align-items: stretch;
+  width: 350px;
+}
+
+form div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px 15px;
 }
 
 form label {
