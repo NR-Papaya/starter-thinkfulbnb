@@ -70,7 +70,7 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 45px;
+  font-size: 15vw;
   color: #fff;
 }
 
@@ -113,6 +113,7 @@ form div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 form label {
@@ -123,7 +124,8 @@ form label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 150px;
+  min-width: 50px;
+  width: 125px;
 }
 
 form button {
@@ -165,6 +167,13 @@ section div img {
 
 #ideas div img {
   margin: 0px;
+}
+
+/* ---------host---------- */
+#host img {
+  margin: 0px;
+  padding: 0px;
+  width: 100%
 }
 
 /* -------  Footer ------- */
