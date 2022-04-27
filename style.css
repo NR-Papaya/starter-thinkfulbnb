@@ -114,17 +114,17 @@ form div {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-
 }
 
 form label {
   font-weight: bold;
+  padding-right: 10px;
 }
 
 form select,
 form input {
   margin-bottom: 20px;
-  width: 100%;
+  width: 150px;
 }
 
 form button {
